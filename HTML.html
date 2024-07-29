@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Client Schema Questionnaire&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Client Schema Questionnaire&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;form id="questionnaire-form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Adding sample statements with a 5-point Likert scale --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="statement1"&gt;I feel like my emotional needs for affection, closeness and love will never be truly met.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-1" value="1"&gt; 1</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-1" value="2"&gt; 2</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-1" value="3"&gt; 3</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-1" value="4"&gt; 4</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-1" value="5"&gt; 5</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="statement2"&gt;I feel as though my need for important people in my life to listen to me and understand me will not be met.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-2" value="1"&gt; 1</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-2" value="2"&gt; 2</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-2" value="3"&gt; 3</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-2" value="4"&gt; 4</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-2" value="5"&gt; 5</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;label for="statement3"&gt;I feel as though my need for advice, guidance and direction cannot be met by the close or daily relationships I have.&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-3" value="1"&gt; 1</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-3" value="2"&gt; 2</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-3" value="3"&gt; 3</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-3" value="4"&gt; 4</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="radio" name="domain1-3" value="5"&gt; 5</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Add more questions similarly --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="button" onclick="calculateScores()"&gt;Submit&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="results-container" style="display: none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Results&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="summary-report"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="next-steps"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
